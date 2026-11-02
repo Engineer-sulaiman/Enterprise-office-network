@@ -1,33 +1,35 @@
-# Enterprise Office Network
+# Enterprise HQ–Branch Network
 
-A Cisco Packet Tracer lab exploring office network design, VLANs,
-inter-VLAN routing, DHCP and troubleshooting.
+A personal Cisco Packet Tracer lab connecting a headquarters
+office, a branch office and a simulated ISP.
 
 ## Project Objective
-Build a simulated office network with separate departmental VLANs,
-automatic IP addressing and connectivity between departments.
+Practise departmental network segmentation, IP addressing,
+routing and troubleshooting across two office locations.
 
-## Technologies
-- Cisco Packet Tracer
-- Cisco IOS
-- VLANs and IEEE 802.1Q trunking
-- Router-on-a-Stick
-- DHCP
-- IPv4 addressing and subnetting
+## Topology
+| Location | Equipment | Departments |
+|----------|-----------|-------------|
+| Headquarters | R1-HQ router and SW1-HQ switch | Sales, IT and HR |
+| Branch | R2-Branch router and SW2-Branch switch | Staff and Admin |
+| Simulated ISP | R3-ISP router | External network connection |
 
-## Network Design
-| Department | VLAN | Subnet | Default Gateway |
-|------------|------|--------|-----------------|
-| HR | 10 | 192.168.10.0/24 | 192.168.10.1 |
-| IT | 20 | 192.168.20.0/24 | 192.168.20.1 |
-| Sales | 30 | 192.168.30.0/24 | 192.168.30.1 |
+HQ connects to both the branch router and the simulated ISP.
+Each office switch connects its departmental PCs.
 
-## Documentation Status
-Project documentation is being added. The Packet Tracer file,
-topology, device configurations and verification results will
-be uploaded as they are reviewed.
+## Project Files
+- Packet Tracer project (.pkt)
+- HQ–Branch topology screenshot
+
+Download the .pkt file and open it in Cisco Packet Tracer
+to explore the network.
+
+## Verification
+Connectivity is reported as working by the author.
+Command outputs and test evidence have not yet been added
+to this repository.
 
 ## Author
 Sulaiman Khan
 
-*Personal learning lab using simulated equipment.*
+This is a learning lab using simulated equipment.
